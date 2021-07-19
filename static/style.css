@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    background: url(bg.jpg) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+}
+.inner{
+    background: url(paper.jpg) no-repeat center center/cover;
+    height: 60vh;
+    width: 50%;
+    position: relative;
+    margin: auto;
+    top: 17%;
+}
+.twitter img{
+    width: 90px;
+    cursor: pointer;
+}
+.text{
+    padding-top: 6rem;
+    width: 80%;
+    margin: auto;
+}
+.auth{
+    position: absolute;
+    right: 10%;
+    bottom: 27%;
+}
+.next{
+    height: 7vh;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    cursor: pointer;
+    background-color: rgb(17, 158, 214);
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 11px rgba(0, 20, 136, 0.5);
+    transition: all 0.1s;
+}
+.next:hover{
+    text-decoration: underline;
+}
+.next:active{
+    box-shadow: none; 
+    transform: scale(0.99);
+    color: red;
+}
+.tani{
+    animation: ani1 0.5s linear;
+    transform-origin: center;
+}
+@keyframes ani1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
